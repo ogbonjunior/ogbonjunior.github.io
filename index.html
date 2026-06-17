@@ -1,114 +1,244 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Junior OGBON</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OGBON Junior – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>OGBON Adny's Adéchina Junior Andil</h1>
-        <p>Développeur Web Full Stack Junior | Étudiant en Systèmes Informatiques et Logiciels</p>
+<!-- ══ NAV ══ -->
+<nav>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="hamburger-label" aria-label="Afficher les sections">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <ul class="nav-links">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#formation">Formation</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-        <nav>
-            <a href="#accueil">Accueil</a>
-            <a href="#apropos">À propos</a>
-            <a href="#competences">Compétences</a>
-            <a href="#formations">Formations</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<!-- ══ HERO ══ -->
+<section id="accueil">
+  <div class="hero-inner container">
+    <div class="hero-text">
+      <h1 class="hero-name">
+        OGBON<br><span>Adny's Adechina Junior Andil</span>
+      </h1>
+      <p class="hero-sub">
+        Développeur Web Full Stack Junior &amp;<br>
+        Étudiant en Systèmes Informatiques et Logiciels
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">✉️ Me contacter</a>
+        <a href="OGBON.pdf" download class="btn btn-outline">⬇️ Télécharger mon CV</a>
+      </div>
     </div>
-</header>
-
-<section id="accueil" class="hero">
-    <div class="container">
-        <h2>Bonjour, je suis</h2>
-        <h1>Junior OGBON</h1>
-
-        <p>
-            Passionné par le développement web et l'intelligence artificielle,
-            je développe progressivement mes compétences afin de concevoir des
-            solutions numériques innovantes et à fort impact.
-        </p>
-
-        <a href="OGBON.pdf" class="btn">
-            Télécharger mon CV
-        </a>
-
-        <a href="#contact" class="btn btn-secondaire">
-            Me contacter
-        </a>
+    <div class="hero-photo">
+      <div class="photo-ring">
+        <img src="Image.jpg" alt="Photo de OGBON Junior Andil" />
+      </div>
     </div>
+  </div>
 </section>
 
+<!-- ══ À PROPOS ══ -->
 <section id="apropos">
-    <div class="container">
-        <h2>À propos de moi</h2>
-
+  <div class="container">
+    <p class="section-label">Qui suis-je ?</p>
+    <h2 class="section-title">À propos de moi</h2>
+    <div class="section-sep"></div>
+    <div class="apropos-grid">
+      <div class="apropos-texte">
         <p>
-            Je suis étudiant en Licence en Systèmes Informatiques et Logiciels.
-            Passionné par les technologies numériques, le développement web et
-            l'intelligence artificielle, je cherche continuellement à renforcer
-            mes compétences afin de devenir un développeur Full Stack capable de
-            créer des solutions numériques modernes et utiles.
+          Passionné par le développement web et l'intelligence artificielle, je suis étudiant en Licence
+          <strong style="color:var(--texte)">Systèmes Informatiques et Logiciels</strong> à l'UPAO.
+          Curieux, autonome et toujours prêt à apprendre, je souhaite créer des solutions numériques
+          à fort impact.
         </p>
+        <p>
+          Originaire d'Adjarra au Bénin, je combine rigueur académique et projets pratiques
+          pour construire des expériences web modernes, accessibles et performantes.
+        </p>
+      </div>
+      <div class="apropos-card">
+        <div class="info-row">
+          <div class="info-pill">📍 Adjarra, Porto-Novo, Bénin</div>
+          <div class="info-pill">🎓 Etudiant en SIL – UPAO</div>
+          <div class="info-pill">💼 Développeur Full Stack Junior</div>
+          <div class="info-pill">🌐 Français</div>
+          <div class="info-pill">📧 ogbonjunior2008@gmail.com</div>
+          <div class="info-pill">📞 +229 01 54 11 94 08</div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
+<!-- ══ COMPÉTENCES ══ -->
 <section id="competences">
-    <div class="container">
-        <h2>Compétences</h2>
+  <div class="container">
+    <p class="section-label">Ce que je maîtrise</p>
+    <h2 class="section-title">Compétences techniques</h2>
+    <div class="section-sep"></div>
+    <div class="skills-grid">
 
-        <div class="cards">
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">Windows</div>
-            <div class="card">Internet</div>
-            <div class="card">Outils bureautiques</div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-header">
+          <span class="skill-name">HTML</span>
         </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-header">
+          <span class="skill-name">CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">💻</div>
+        <div class="skill-header">
+          <span class="skill-name">Windows &amp; Bureautique</span>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<section id="formations">
-    <div class="container">
-        <h2>Formations</h2>
+<!-- ══ FORMATION ══ -->
+<section id="formation">
+  <div class="container">
+    <p class="section-label">Mon parcours</p>
+    <h2 class="section-title">Formation</h2>
+    <div class="section-sep"></div>
+    <div class="timeline">
 
-        <div class="card">
-            Licence en Systèmes Informatiques et Logiciels (En cours)
-        </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2024 – En cours</div>
+        <div class="tl-title">Licence en Systèmes Informatiques et Logiciels</div>
+        <div class="tl-org">🏫 UPAO – Université Protestante de l'Afrique de l'Ouest</div>
+      </div>
 
-        <div class="card">
-            Formation en Développement Web Frontend – LABIS Porto-Novo
-        </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2025</div>
+        <div class="tl-title">Formation en Développement Web Frontend</div>
+        <div class="tl-org">🏢 LABIS Porto-Novo</div>
+      </div>
 
-        <div class="card">
-            Formation sur les Bases de l'Intelligence Artificielle – AIESEC in Porto-Novo
-        </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2024</div>
+        <div class="tl-title">Formation – Bases de l'Intelligence Artificielle</div>
+        <div class="tl-org">🌍 AIESEC in Porto-Novo</div>
+      </div>
+
     </div>
+  </div>
 </section>
 
+<!-- ══ SOFT SKILLS ══ -->
+<section id="softskills">
+  <div class="container">
+    <p class="section-label">Au-delà du code</p>
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="section-sep"></div>
+    <div class="soft-grid">
+      <div class="soft-card"><div class="soft-emoji">🤝</div><div class="soft-name">Travail d'équipe</div></div>
+      <div class="soft-card"><div class="soft-emoji">💡</div><div class="soft-name">Créativité</div></div>
+      <div class="soft-card"><div class="soft-emoji">🔎</div><div class="soft-name">Curiosité</div></div>
+      <div class="soft-card"><div class="soft-emoji">🦅</div><div class="soft-name">Autonomie</div></div>
+      <div class="soft-card"><div class="soft-emoji">📈</div><div class="soft-name">Apprentissage rapide</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INTÉRÊTS ══ -->
+<section id="interets">
+  <div class="container">
+    <p class="section-label">Ce qui m'inspire</p>
+    <h2 class="section-title">Centres d'intérêt</h2>
+    <div class="section-sep"></div>
+    <div class="int-grid">
+      <div class="int-tag">🌐 Développement Web</div>
+      <div class="int-tag">🤖 Intelligence Artificielle</div>
+      <div class="int-tag">📱 Technologies Numériques</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
 <section id="contact">
-    <div class="container">
-        <h2>Contact</h2>
+  <div class="container">
+    <p class="section-label">Travaillons ensemble</p>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-sep"></div>
+    <div class="contact-grid">
 
-        <p>📧 ogbonjunior2008@gmail.com</p>
-        <p>📍 Bénin</p>
-        <p>📞 (+229) 01 54 11 94 08</p>
+      <div class="contact-card">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+              <a href="mailto:ogbonjunior2008@gmail.com">ogbonjunior2008@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Téléphone 1</div>
+            <div class="contact-value">
+              <a href="tel:+22901541194008">+229 01 54 11 94 08</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Téléphone 2</div>
+            <div class="contact-value">
+              <a href="tel:+22901438393003">+229 01 43 83 93 03</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Localisation</div>
+            <div class="contact-value">Adjarra, Porto-Novo, Bénin</div>
+          </div>
+        </div>
+      </div>
 
-        <p>
-            GitHub :
-            <a href="https://github.com/ogbonjunior" target="_blank">
-                github.com/ogbonjunior
-            </a>
-        </p>
+      <div class="cv-banner">
+        <div class="cv-icon">📄</div>
+        <h3>Mon CV complet</h3>
+        <p>Télécharge mon CV en PDF pour découvrir en détail mon parcours, mes compétences et mes expériences.</p>
+        <a href="OGBON.pdf" download class="btn btn-primary">
+          ⬇️ Télécharger mon CV (PDF)
+        </a>
+      </div>
+
     </div>
+  </div>
 </section>
 
+<!-- ══ FOOTER ══ -->
 <footer>
-    <p>© 2026 OGBON Adny's Adéchina Junior Andil - Tous droits réservés.</p>
+  <p>© 2026 <span>OGBON Junior</span> — Développeur Web Full Stack Junior | Etudiant en en Systèmes Informatiques et Logiciels</p>
 </footer>
 
 </body>
